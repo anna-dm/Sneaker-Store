@@ -27,6 +27,7 @@ function App() {
             title={obj.title}
             price={obj.price}
             imageUrl={obj.imageUrl}
+            onClick={() => console.log(obj)}
           />
         ))}
 
