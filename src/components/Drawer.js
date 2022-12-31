@@ -1,8 +1,8 @@
-function Drawer() {
+function Drawer(props) {
     return (
-        <div style={{ display: 'none' }} className='overlay'>
+        <div className='overlay'>
             <div className='drawer'>
-                <h2 className=' d-flex justify-between mb-30'>Корзина <img className=' cu-p' src='/img/btn-remove.svg' alt='Remove' /></h2>
+                <h2 className=' d-flex justify-between mb-30'>Корзина <img onClick={props.onClose} className=' cu-p' src='/img/btn-remove.svg' alt='Remove' /></h2>
 
 
                 <div className='cartItem d-flex aline-center mb-20' >
@@ -21,7 +21,7 @@ function Drawer() {
 
                     <div style={{ backgroundImage: 'url(/img/sneakers/1.jpg)' }} className='cartItemImg'></div>
 
-                    <div className='mr-20 flex' >
+                    <div className='mr-20 flex'  >
                         <p className='mb-5'>Мужские Кроссовки Nike Air Max 270</p>
                         <b>12 999 руб.</b>
                     </div>
